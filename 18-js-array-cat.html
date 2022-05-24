@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- กัญญาภรณ์ ประไพภักดิ์ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-js-array-cat.html</title>
+    <script>
+        let cat = ['Toyota', 'Isuzu', 'Mazda', 'Ford']
+    </script>
+</head>
+<body>
+    <script>
+        // document.write(cat[0] + '<br>')
+        // document.write(cat[1]  + '<br>')
+        // document.write(cat[2] + '<br>')
+       
+    // ดึงข้อมูลจาก array โดยใช้For
+    //     for(let i =0; i <cat.length; i++){
+    //        document.write(cat[i] + '<br>')
+    //    }
+    // ดึงข้อมูลจาก array โดยใช้For in
+    // for( let i in cat){
+    //     document.write(cat [i] + '<br>')
+    // }
+    cat[4]= 'MG'
+    cat[5]= 'Honda'
+    cat[4]= 'Nissan'
+    cat.pop()
+    cat.pop()
+    cat.push('BMW')
+    cat.shift()
+    cat.unshift('Volvo')
+    // delete cat[2]
+    cat.sort()
+    cat.reverse()
+
+
+    // ดึงข้อมูลจาก array โดยใช้ For of
+    for(let i of cat){
+        document.write( i + '<br>')
+    }
+    
+
+    // ดึงข้อมูลจาก array โดยใช้while
+    // let i =0
+    // while(i < cat.lastIndexOf){
+    //     document.write([i] + '<br>')
+    //     i++
+    // }
+
+    </script>
+    
+</body>
+</html>
